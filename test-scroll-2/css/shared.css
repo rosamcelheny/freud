@@ -1,0 +1,125 @@
+html {
+    background-color:#eee;
+}
+
+body {
+	margin:0px;
+    overflow:hidden;
+}
+
+.zoomContainer {
+	margin:0;
+    padding:0;
+    width: 75vw;
+    margin-left:25vw;
+    position:relative;
+}
+
+.container {
+	display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 90vh;
+    position: absolute;
+    left: 25vw;
+    width: 75vw;
+}
+
+.zoomViewport {
+	margin:0;
+    padding:0;
+	background-color:white;
+}
+
+div {
+    -webkit-tap-highlight-color:rgba(0,0,0,0);
+}
+
+img {
+	width:100%;
+}
+
+/*area on left-hand side where the captions go*/
+.sidebar {
+    position: fixed;
+    left: 0px;
+    top: 0px;
+    width: 25vw;
+    height: 100vh;
+    background-color:#eee;
+    overflow-y:scroll;
+}
+
+/*style caption here*/
+.caption {
+	font-size:20px;
+    height:80vh ;
+    display: flex;
+    flex-direction:row;
+    flex-wrap:nowrap;
+    padding: 1em;
+}
+
+/*this is the first slide, where it says the name of artwork + author.*/
+.title {
+    text-align:center;
+    align-self: center;
+    width: 100%;
+}
+
+.caption p {
+    align-self:flex-end;
+    padding-bottom:2em;
+}
+
+.caption:last-of-type {
+    margin-bottom:20vh;
+}
+
+/*these styles are added -- and override defaults -- when page is narrower than 1000px.*/
+@media only screen and (max-width: 1000px) {
+/*  html {
+    background-color: lightblue;
+  }*/
+  .sidebar {
+    width:100vw;
+    background-color:initial;
+  }
+  .caption p {
+    background-color:rgba(255,255,255,0.5);
+    padding:2em;
+  }
+  .container {
+    width:100vw;
+    left:0px;
+  }
+}
+
+/*style for link button*/
+#link {
+    width:150px;
+    height:50px;
+    border:1px solid #eee;
+    /*background-color:#dca;*/
+    color: #aaa;;
+    z-index:2;
+    font-size:30px;
+    line-height:45px;
+    text-align:center;
+    font-family:Helvetica, sans-serif;
+    cursor:pointer;
+    cursor:hand;
+}
+
+#link:hover {
+    /*background-color:#ba9;*/
+    border: 1px solid #999;
+}
+
+#navigation {
+    width: 25vw;
+    position: fixed;
+    bottom: 0px;
+    height: 50px;
+}
