@@ -54,6 +54,7 @@ img {
 /*style caption here*/
 .caption {
 	font-size:20px;
+	font-family: Avenir, Arial, Helvetica, sans-serif;
     height:80vh ;
     display: flex;
     flex-direction:row;
@@ -63,6 +64,7 @@ img {
 
 /*this is the first slide, where it says the name of artwork + author.*/
 .title {
+    font-family: Avenir, Arial, Helvetica, sans-serif;
     text-align:center;
     align-self: center;
     width: 100%;
@@ -101,20 +103,20 @@ img {
     width:150px;
     height:50px;
     border:1px solid #eee;
-    /*background-color:#dca;*/
+    background-color:#ddd;
     color: #aaa;;
     z-index:2;
-    font-size:30px;
+    font-size:20px;
     line-height:45px;
     text-align:center;
-    font-family:Helvetica, sans-serif;
+    font-family: Avenir, Arial, Helvetica, sans-serif;
     cursor:pointer;
     cursor:hand;
 }
 
 #link:hover {
-    /*background-color:#ba9;*/
-    border: 1px solid #999;
+    background-color:#bbb;
+    border: 2px solid #999;
 }
 
 #navigation {
