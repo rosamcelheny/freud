@@ -1,0 +1,137 @@
+ body {
+	margin: 0;
+	padding: 0;
+	height: 100%;
+    width: 100%;
+ }
+ 
+/* dimensions 1224 × 1008 */
+
+ #houseplan 
+{ 
+	 left: 0px; 
+	 top: 0px; 
+	 position: relative; 
+	 width: 100%;
+	 height: auto;
+	 z-index:1;
+} 
+
+
+/* room number for debugging */
+.num
+{
+	opacity: 0%; /* uncomment to reveal */
+	font: Avenir, Helvetica, sans-serif;
+	position: relative;
+	left: 48%;
+	top: 30%;
+}
+
+
+
+ #hilite1 
+{ 
+	 opacity: 0%;
+	 background-color: yellow;
+	 left: 15.2%; 
+	 top: 12.8%; 
+	 position: absolute; 
+	 width: 14.4%;
+	 height: 16.7%;
+	 z-index:2;
+} 
+
+#hilite1:hover 
+{
+  	 opacity: 20%;
+}
+
+ #hilite2 
+{ 
+	 opacity: 0%;
+	 background-color: yellow;
+	 left: 32.4%; 
+	 top: 12.8%; 
+	 position: absolute; 
+	 width: 11.7%;
+	 height: 31.3%;
+	 z-index:3;
+} 
+
+#hilite2:hover 
+{
+  	 opacity: 20%;
+}
+
+
+ #hilite3 
+{ 
+	 opacity: 0%;
+	 background-color: yellow;
+	 left: 23%; 
+	 top: 48.9%; 
+	 position: absolute; 
+	 width: 21.7%;
+	 height: 13.4%;
+	 z-index:4;
+} 
+
+#hilite3:hover 
+{
+  	 opacity: 20%;
+}
+
+
+ #hilite4 
+{ 
+	 opacity: 0%;
+	 background-color: yellow;
+	 left: 14.6%; 
+	 top: 33.2%; 
+	 position: absolute; 
+	 width: 14.5%;
+	 height: 11.4%;
+	 z-index:5;
+} 
+
+#hilite4:hover 
+{
+  	 opacity: 20%;
+}
+
+
+ #hilite5 
+{ 
+	 opacity: 0%;
+	 background-color: yellow;
+	 left: 14.6%; 
+	 top: 66%; 
+	 position: absolute; 
+	 width: 14.3%;
+	 height: 20.7%;
+	 z-index:6;
+} 
+
+#hilite5:hover 
+{
+  	 opacity: 20%;
+}
+
+
+ #hilite6 
+{ 
+	 opacity: 0%;
+	 background-color: yellow;
+	 left: 31.9%; 
+	 top: 65.7%; 
+	 position: absolute; 
+	 width: 13%;
+	 height: 21%;
+	 z-index:7;
+} 
+
+#hilite6:hover 
+{
+  	 opacity: 20%;
+}
