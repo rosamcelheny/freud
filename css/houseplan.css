@@ -32,7 +32,7 @@
 
  #hilite1 
 { 
-	 opacity: 0%;
+	 opacity: 10%;
 	 background-color: yellow;
 	 left: 15.2%; 
 	 top: 12.8%; 
@@ -44,12 +44,12 @@
 
 #hilite1:hover 
 {
-  	 opacity: 20%;
+  	 opacity: 30%;
 }
 
  #hilite2 
 { 
-	 opacity: 0%;
+	 opacity: 10%;
 	 background-color: yellow;
 	 left: 32.4%; 
 	 top: 12.8%; 
@@ -61,13 +61,13 @@
 
 #hilite2:hover 
 {
-  	 opacity: 20%;
+  	 opacity: 30%;
 }
 
 
  #hilite3 
 { 
-	 opacity: 0%;
+	 opacity: 10%;
 	 background-color: yellow;
 	 left: 23%; 
 	 top: 48.9%; 
@@ -79,13 +79,13 @@
 
 #hilite3:hover 
 {
-  	 opacity: 20%;
+  	 opacity: 30%;
 }
 
 
  #hilite4 
 { 
-	 opacity: 0%;
+	 opacity: 10%;
 	 background-color: yellow;
 	 left: 14.6%; 
 	 top: 33.2%; 
@@ -97,13 +97,13 @@
 
 #hilite4:hover 
 {
-  	 opacity: 20%;
+  	 opacity: 30%;
 }
 
 
  #hilite5 
 { 
-	 opacity: 0%;
+	 opacity: 10%;
 	 background-color: yellow;
 	 left: 14.6%; 
 	 top: 66%; 
@@ -115,13 +115,13 @@
 
 #hilite5:hover 
 {
-  	 opacity: 20%;
+  	 opacity: 30%;
 }
 
 
  #hilite6 
 { 
-	 opacity: 0%;
+	 opacity: 10%;
 	 background-color: yellow;
 	 left: 31.9%; 
 	 top: 65.7%; 
@@ -133,5 +133,5 @@
 
 #hilite6:hover 
 {
-  	 opacity: 20%;
+  	 opacity: 30%;
 }
