@@ -1,12 +1,18 @@
+<!-- 
+In this version:
+- use previous / next buttons to go through zoom targets.
+- this should change the text in the caption
+ -->
+
 <!DOCTYPE HTML>
 <html>
   
   <head>
     <title>Key Image: The Petromyzon and the Riddle of the Eel, 1876</title>
-    <!-- General stylesheet - include for each one -->
-    <link rel="stylesheet" href="css/shared_RM.css" type="text/css" media="screen" />
     <!-- styles for this page -->
+    <link rel="stylesheet" href="css/no-scroll.css" type="text/css" media="screen" />
     <link rel="stylesheet" href="css/keyimage_4.css" type="text/css" media="screen" />
+    
     <!-- jquery library -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js" type="text/javascript"></script>
     <!-- zoomooz library -->
@@ -35,15 +41,26 @@
           </div>
         </div>
     </div>
-    <div class="sidebar">
+
+    <div class="controls">
+      <div class="navigation">
+        <div id="prev" class="zoomButton" data-type="prev" data-root=".zoomViewport">Previous &lt;</div>
+        <div id="next" class="zoomButton" data-type="next" data-root=".zoomViewport">Next &gt;</div>
+      </div>
+
+      <div class="caption-frame"> 
+          <h1>The Petromyzon and the Riddle of the Eel</h1>
+      </div>
+    </div>
+   <!--  <div class="sidebar">
       <div class='caption'>
         <div class='title'>
-          <h1>The Petromyzon and the Riddle of the Eel</h1>
-          <h2>1876</h2> 
+          
         </div>
       </div>
-      
-      
+    </div> -->
+
+
       <div class="caption" data-index="1">
         <p>The drawing is an aggregate of various cross-sections and staining of the <i>Petromyzon</i>.</p>
       </div>
@@ -73,54 +90,70 @@
       </div>
       <div class="caption" data-index="10">
         <p>On both the right and left hand side, branches of nerve fibers (<i>nf</i>) spread out of the spinal cord (marked <i>Rmk</i>) through a larger plexus of nerve fibers (<i>A</i>).</p>
-      
-
-      <!-- just got rid of the navigation for now. -->
-      <!-- <div id="navigation">
-        <div id="prev" class="zoomButton" data-type="prev" data-root=".zoomViewport">&lt;</div>
-        <div id="next" class="zoomButton" data-type="next" data-root=".zoomViewport">&gt;</div>
-      </div> -->
-    </div> 
+      </div> 
     
       <!-- put in a link to get out of interactive  -->   
-      <center><div id="link"> <a href="https://scholar.harvard.edu/agriswold/freud-interactives">Return</a></center>
-        </p>  </center>       
+      <center>
+        <div id="link">
+          <a href="https://scholar.harvard.edu/agriswold/freud-interactives">Return</a>
+        </div>
+      </center>
+           
           
   </body>
   <script>
 
-    // declare some variables
-    var width;
-    var height;
+
+    // When you click on next/previous, advance caption appropriately.
     var caption;
+    var current = 0;
+    var current_caption;
 
-    // This function makes the zoom viewport the same size as the drawing. It also calculates the height of the window, which we'll use when we're detecting the scroll.
-    function size() {
-      width = $("#drawing").width();
-      height = $("#drawing").height();
-      console.log("width =" + width);
-      console.log("height =" + height);
+    // Make an array of all the captions.
+    var captions = $(".caption");
 
-      $('.zoomViewport').height(height);
-      $('.zoomViewport').width(width);
-    }
-
-    // and whenever the window is resized.
-    $(window).resize(function(){
-      size();
-      getValues();
+    // When you click "next", show the next array.
+    $("#next").click(function(){
+      console.log("next!");
+      current = current + 1;
+      current_caption = captions[current];
+      $('.caption-frame').html(current_caption);
+      console.log(current_caption);
     });
 
+
+    // declare some variables
+    // var width;
+    // var height;
+
+
+    // This function makes the zoom viewport the same size as the drawing. It also calculates the height of the window, which we'll use when we're detecting the scroll.
+    // function size() {
+    //   width = $("#drawing").width();
+    //   height = $("#drawing").height();
+    //   console.log("width =" + width);
+    //   console.log("height =" + height);
+
+    //   $('.zoomViewport').height(height);
+    //   $('.zoomViewport').width(width);
+    // }
+
+    // and whenever the window is resized.
+    // $(window).resize(function(){
+    //   size();
+    //   getValues();
+    // });
+
     // make an array with the position of the top and bottom of each caption div.
-    var values = [];
-    function getValues() {
-      $('.caption').each(function(i) {
-        var pTop = $(this).offset().top;
-        var pBottom = $(this).height() + pTop;
-        console.log(i +" pTop= "+ pTop+" pBot= "+pBottom);
-        values.push({pTop, pBottom});
-      });
-    }
+    // var values = [];
+    // function getValues() {
+    //   $('.caption').each(function(i) {
+    //     var pTop = $(this).offset().top;
+    //     var pBottom = $(this).height() + pTop;
+    //     console.log(i +" pTop= "+ pTop+" pBot= "+pBottom);
+    //     values.push({pTop, pBottom});
+    //   });
+    // }
 
     // figre out which caption is the one you're in, by comparing how far you've scrolled down the page to the values in the array created by getValues.
     function getCaption(scrollY) {
@@ -155,9 +188,9 @@
 
     // do these things when the page loads.
     $(document).ready(function(){
-      size();
-      getValues();
-      setupScrollEvents();
+      // size();
+      // getValues();
+      // setupScrollEvents();
     });
 
   </script>

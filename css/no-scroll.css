@@ -1,0 +1,110 @@
+html {
+    background-color:#eee;
+}
+
+body {
+  margin:0px;
+    overflow:hidden;
+}
+
+.container {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width:100vw;
+    /*border:1px solid yellow;*/
+}
+
+.zoomViewport {
+    margin:0;
+    padding:0;
+    background-color:white;
+    height:100%;
+    width:100%;
+    display:flex;
+    flex-direction:column;
+    align-items: center;
+    justify-content:center;
+    /*border:1px solid green;*/
+}
+
+img {
+    width: 100%;
+}
+
+.zoomTarget {
+    /*border: 1px solid red;*/
+}
+
+div {
+    -webkit-tap-highlight-color:rgba(0,0,0,0);
+}
+
+/*area on left-hand side where the captions go*/
+.sidebar {
+    position: fixed;
+    left: 0px;
+    top: 0px;
+    width: 25vw;
+    height: 100vh;
+    width:100vw;
+    overflow-y:scroll;
+    background-color:initial;
+}
+
+
+
+/*style for link button*/
+#link {
+    width:150px;
+    height:50px;
+    border:1px solid #eee;
+    background-color:#ddd;
+    color: #aaa;;
+    z-index:2;
+    font-size:20px;
+    line-height:45px;
+    text-align:center;
+    font-family: Avenir, Arial, Helvetica, sans-serif;
+    cursor:pointer;
+    cursor:hand;
+}
+
+#link:hover {
+    background-color:#bbb;
+    border: 2px solid #999;
+}
+
+/*bottom bar with buttons + caption*/
+.controls {
+  position: absolute;
+  bottom: 1em;
+  left: 1em;
+  display:flex;
+}
+
+.navigation {
+  z-index:100;
+  width:325px;
+}
+
+#prev:hover, #next:hover {
+  cursor: pointer;
+  background: yellow;
+}
+
+.caption-frame {
+  display:inline-block;
+}
+/*style caption here*/
+.caption {
+  font-size:20px;
+  font-family: Avenir, Arial, Helvetica, sans-serif;
+}
+
+.caption p {
+  margin:0;
+}
