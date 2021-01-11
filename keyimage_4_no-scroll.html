@@ -36,13 +36,13 @@
         </div>
     </div>
     <div class="sidebar">
-
       <div class='caption'>
         <div class='title'>
           <h1>The Petromyzon and the Riddle of the Eel</h1>
           <h2>1876</h2> 
         </div>
       </div>
+      
       
       <div class="caption" data-index="1">
         <p>The drawing is an aggregate of various cross-sections and staining of the <i>Petromyzon</i>.</p>
@@ -83,11 +83,8 @@
     </div> 
     
       <!-- put in a link to get out of interactive  -->   
-      <center>
-        <div id="link">
-          <a href="https://scholar.harvard.edu/agriswold/freud-interactives">Return</a>
-        </div>
-      </center>       
+      <center><div id="link"> <a href="https://scholar.harvard.edu/agriswold/freud-interactives">Return</a></center>
+        </p>  </center>       
           
   </body>
   <script>
@@ -98,21 +95,21 @@
     var caption;
 
     // This function makes the zoom viewport the same size as the drawing. It also calculates the height of the window, which we'll use when we're detecting the scroll.
-    // function size() {
-    //   width = $("#drawing").width();
-    //   height = $("#drawing").height();
-    //   console.log("width =" + width);
-    //   console.log("height =" + height);
+    function size() {
+      width = $("#drawing").width();
+      height = $("#drawing").height();
+      console.log("width =" + width);
+      console.log("height =" + height);
 
-    //   $('.zoomViewport').height(height);
-    //   $('.zoomViewport').width(width);
-    // }
+      $('.zoomViewport').height(height);
+      $('.zoomViewport').width(width);
+    }
 
     // and whenever the window is resized.
-    // $(window).resize(function(){
-    //   size();
-    //   getValues();
-    // });
+    $(window).resize(function(){
+      size();
+      getValues();
+    });
 
     // make an array with the position of the top and bottom of each caption div.
     var values = [];
@@ -158,7 +155,7 @@
 
     // do these things when the page loads.
     $(document).ready(function(){
-      // size();
+      size();
       getValues();
       setupScrollEvents();
     });

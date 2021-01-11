@@ -7,39 +7,40 @@ body {
     overflow:hidden;
 }
 
-.zoomContainer {
-	margin:0;
-    padding:0;
-    /*width: 75vw;*/
-    width: 100vw;
-    /*margin-left:25vw;*/
-    position:relative;
-}
-
 .container {
-	display: flex;
+    position: absolute;
+    display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     height: 100vh;
-    position: absolute;
-    /*left: 25vw;*/
-    /*width: 75vw;*/
     width:100vw;
+    /*border:1px solid yellow;*/
 }
 
 .zoomViewport {
-	margin:0;
+    margin:0;
     padding:0;
-	background-color:white;
+    background-color:white;
+    height:100%;
+    width:100%;
+    display:flex;
+    flex-direction:column;
+    align-items: center;
+    justify-content:center;
+    /*border:1px solid green;*/
+}
+
+img {
+    width: 100%;
+}
+
+.zoomTarget {
+    /*border: 1px solid red;*/
 }
 
 div {
     -webkit-tap-highlight-color:rgba(0,0,0,0);
-}
-
-img {
-	width:100%;
 }
 
 /*area on left-hand side where the captions go*/
@@ -49,9 +50,8 @@ img {
     top: 0px;
     width: 25vw;
     height: 100vh;
-    /*background-color:#eee;*/
+    width:100vw;
     overflow-y:scroll;
-     width:100vw;
     background-color:initial;
 }
 
@@ -66,10 +66,10 @@ img {
     padding: 1em;
 }
 
-  .caption p {
+.caption p {
     background-color:rgba(255,255,255,0.5);
     padding:2em;
-  }
+}
 
 /*this is the first slide, where it says the name of artwork + author.*/
 .title {
@@ -87,21 +87,6 @@ img {
 
 .caption:last-of-type {
     margin-bottom:20vh;
-}
-
-/*these styles are added -- and override defaults -- when page is narrower than 1000px.*/
-@media only screen and (max-width: 1000px) {
-/*  html {
-    background-color: lightblue;
-  }*/
-  .sidebar {
-   
-  }
-
-  .container {
-    width:100vw;
-    left:0px;
-  }
 }
 
 /*style for link button*/
