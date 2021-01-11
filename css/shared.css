@@ -10,8 +10,9 @@ body {
 .zoomContainer {
 	margin:0;
     padding:0;
-    width: 75vw;
-    margin-left:25vw;
+    /*width: 75vw;*/
+    width: 100vw;
+    /*margin-left:25vw;*/
     position:relative;
 }
 
@@ -20,10 +21,11 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 90vh;
+    height: 100vh;
     position: absolute;
-    left: 25vw;
-    width: 75vw;
+    /*left: 25vw;*/
+    /*width: 75vw;*/
+    width:100vw;
 }
 
 .zoomViewport {
@@ -47,8 +49,10 @@ img {
     top: 0px;
     width: 25vw;
     height: 100vh;
-    background-color:#eee;
+    /*background-color:#eee;*/
     overflow-y:scroll;
+     width:100vw;
+    background-color:initial;
 }
 
 /*style caption here*/
@@ -62,6 +66,11 @@ img {
     padding: 1em;
 }
 
+  .caption p {
+    background-color:rgba(255,255,255,0.5);
+    padding:2em;
+  }
+
 /*this is the first slide, where it says the name of artwork + author.*/
 .title {
     font-family: Avenir, Arial, Helvetica, sans-serif;
@@ -73,6 +82,7 @@ img {
 .caption p {
     align-self:flex-end;
     padding-bottom:2em;
+    width: 100%;
 }
 
 .caption:last-of-type {
@@ -85,13 +95,9 @@ img {
     background-color: lightblue;
   }*/
   .sidebar {
-    width:100vw;
-    background-color:initial;
+   
   }
-  .caption p {
-    background-color:rgba(255,255,255,0.5);
-    padding:2em;
-  }
+
   .container {
     width:100vw;
     left:0px;
