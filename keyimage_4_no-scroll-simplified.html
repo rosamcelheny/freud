@@ -1,11 +1,3 @@
-<!-- Modifed AG 1/11/21 to simplify & clean up scrolling --->
-
-<!-- 
-In this version:
-- use previous / next buttons to go through zoom targets.
-- this should change the text in the caption
- -->
-
 <!DOCTYPE HTML>
 <html>
   
@@ -39,70 +31,72 @@ In this version:
             <div class="zoomTarget" data-index="9"></div>
             <div class="zoomTarget" data-index="10"></div>
            
+            <!-- Overlays go here -->
+            <div class="overlay" data-index="1"></div>
+            <div class="overlay" data-index="2"></div>
+            <div class="overlay" data-index="3"></div>
+            <div class="overlay" data-index="4"></div>
+            <div class="overlay" data-index="5"></div>
+            <div class="overlay" data-index="6"></div>
+            <div class="overlay" data-index="7"></div>
+            <div class="overlay" data-index="8"></div>
+            <div class="overlay" data-index="9"></div>
+            <div class="overlay" data-index="10"></div>
+            
             <!-- drawing goes here -->
             <img id="drawing" src="images/keyimage_4.jpg">      
           </div>
         </div>
     </div>
 
+    <!-- bar at the bottom of the screen -->
     <div class="controls">
-      <div class="navigation">
-        <div id="prev" class="zoomButton" data-type="prev" data-root=".zoomViewport">Previous &lt;</div>
-        <div id="next" class="zoomButton" data-type="next" data-root=".zoomViewport">Next &gt;</div>
-      </div>
-
+      <div id="prev" class="zoomButton" data-type="prev" data-root=".zoomViewport">←&nbsp;Previous</div>
+      
       <div class="caption-frame"> 
-          <h1>The Petromyzon and the Riddle of the Eel</h1>
+          <h1 class="caption">The Petromyzon and the Riddle of the Eel</h1>
       </div>
+
+      <div id="next" class="zoomButton" data-type="next" data-root=".zoomViewport">Next&nbsp;→</div>
     </div>
-   <!--  <div class="sidebar">
-      <div class='caption'>
-        <div class='title'>
-          
-        </div>
-      </div>
-    </div> -->
 
-
-      <div class="caption" data-index="1">
-        <p>The drawing is an aggregate of various cross-sections and staining of the <i>Petromyzon</i>.</p>
-      </div>
-      <div class="caption" data-index="2">
-        <p>In Figure 1, we see a posterior view of the <i>Petromyzon's</i> nerves.</p>
-      </div>
-      <div class="caption" data-index="3">
-        <p>The spinal ganglionic cell (<i>spz</i>), an archaic aggregation of nerve cells, is located in the left corner.</p>
-      </div>
-      <div class="caption" data-index="4">
-        <p>Freud includes many elements of the nervous system, while following one nerve fiber as it accompanies a microscopic blood vessel (<i>gbf</i>).</p>
-      </div>
-      <div class="caption" data-index="5">
-        <p>Freud also illustrates a varicose axon of a nerve cell (<i>ff</i>), a part of a nerve fiber not coated with any other cells, and thus with a lower conductivity level. </p>
-      </div>
-      <div class="caption" data-index="6">
-        <p>The capacity to see nerve cells with such a high level of precision was one of the most novel elements in nerve histology and was the result of a staining technique developed by the Spanish neurobiologist Cajal. </p>
-      </div>
-      <div class="caption" data-index="7">
-        <p>Figure 2 depicts a different branch of the posterior root of the spinal ganglion of the <i>Petromyzon</i>. </p>
-      </div>
-      <div class="caption" data-index="8">
-        <p>Of particular note are the black elements, marked as <i>zs</i>, representing spinal ganglion cells firing into the sympathetic branch of the <i>Petromyzon</i>'s nerve system.</p>
-      </div>
-      <div class="caption" data-index="9">
-        <p>On the bottom of the drawing, Figure&nbsp;3 shows a network of nerve cells attached to the <i>pia mater</i>, one of the nerve's <i>meninges</i>, or coating, marked in drawing as <i>PM</i>.</p>
-      </div>
-      <div class="caption" data-index="10">
-        <p>On both the right and left hand side, branches of nerve fibers (<i>nf</i>) spread out of the spinal cord (marked <i>Rmk</i>) through a larger plexus of nerve fibers (<i>A</i>).</p>
-      </div> 
-    
-      <!-- put in a link to get out of interactive  -->   
-      <center>
-        <div id="link">
+    <!-- captions here -->
+    <div class="caption" data-index="1">
+      <p>The drawing is an aggregate of various cross-sections and staining of the <i>Petromyzon</i>.</p>
+    </div>
+    <div class="caption" data-index="2">
+      <p>In Figure 1, we see a posterior view of the <i>Petromyzon's</i> nerves.</p>
+    </div>
+    <div class="caption" data-index="3">
+      <p>The spinal ganglionic cell (<i>spz</i>), an archaic aggregation of nerve cells, is located in the left corner.</p>
+    </div>
+    <div class="caption" data-index="4">
+      <p>Freud includes many elements of the nervous system, while following one nerve fiber as it accompanies a microscopic blood vessel (<i>gbf</i>).</p>
+    </div>
+    <div class="caption" data-index="5">
+      <p>Freud also illustrates a varicose axon of a nerve cell (<i>ff</i>), a part of a nerve fiber not coated with any other cells, and thus with a lower conductivity level. </p>
+    </div>
+    <div class="caption" data-index="6">
+      <p>The capacity to see nerve cells with such a high level of precision was one of the most novel elements in nerve histology and was the result of a staining technique developed by the Spanish neurobiologist Cajal. </p>
+    </div>
+    <div class="caption" data-index="7">
+      <p>Figure 2 depicts a different branch of the posterior root of the spinal ganglion of the <i>Petromyzon</i>. </p>
+    </div>
+    <div class="caption" data-index="8">
+      <p>Of particular note are the black elements, marked as <i>zs</i>, representing spinal ganglion cells firing into the sympathetic branch of the <i>Petromyzon</i>'s nerve system.</p>
+    </div>
+    <div class="caption" data-index="9">
+      <p>On the bottom of the drawing, Figure&nbsp;3 shows a network of nerve cells attached to the <i>pia mater</i>, one of the nerve's <i>meninges</i>, or coating, marked in drawing as <i>PM</i>.</p>
+    </div>
+    <div class="caption" data-index="10">
+      <p>On both the right and left hand side, branches of nerve fibers (<i>nf</i>) spread out of the spinal cord (marked <i>Rmk</i>) through a larger plexus of nerve fibers (<i>A</i>).</p>
+    </div> 
+  
+    <!-- put in a link to get out of interactive  -->   
+      <div id="link">
           <a href="https://scholar.harvard.edu/agriswold/freud-interactives">Return</a>
-        </div>
-      </center>
+      </div>
            
-          
   </body>
   <script>
 
@@ -111,89 +105,52 @@ In this version:
     var caption;
     var current = 0;
     var current_caption;
-
+    var current_zoom;
+    var current_overlay;
+    
     // Make an array of all the captions.
     var captions = $(".caption");
+    var max = captions.length - 1;
 
-    // When you click "next", show the next array.
+    var overlays = $(".overlay");
+    
+    // When you click "next", advance the "current" counter. Then show the corresponding caption and overlay. When you reach the last slide, go back to the beginning.
     $("#next").click(function(){
-      console.log("next!");
-      current = current + 1;
-      current_caption = captions[current];
-      $('.caption-frame').html(current_caption);
-      console.log(current_caption);
+      if (current < max) {
+        current = current + 1;
+      } else {
+        current = 0;
+      }
+      display_caption(current);
+      display_overlay(current);
     });
 
-
-    // declare some variables
-    // var width;
-    // var height;
-
-
-    // This function makes the zoom viewport the same size as the drawing. It also calculates the height of the window, which we'll use when we're detecting the scroll.
-    // function size() {
-    //   width = $("#drawing").width();
-    //   height = $("#drawing").height();
-    //   console.log("width =" + width);
-    //   console.log("height =" + height);
-
-    //   $('.zoomViewport').height(height);
-    //   $('.zoomViewport').width(width);
-    // }
-
-    // and whenever the window is resized.
-    // $(window).resize(function(){
-    //   size();
-    //   getValues();
-    // });
-
-    // make an array with the position of the top and bottom of each caption div.
-    // var values = [];
-    // function getValues() {
-    //   $('.caption').each(function(i) {
-    //     var pTop = $(this).offset().top;
-    //     var pBottom = $(this).height() + pTop;
-    //     console.log(i +" pTop= "+ pTop+" pBot= "+pBottom);
-    //     values.push({pTop, pBottom});
-    //   });
-    // }
-
-    // figre out which caption is the one you're in, by comparing how far you've scrolled down the page to the values in the array created by getValues.
-    function getCaption(scrollY) {
-      var indexToReturn = 0;
-      for (i = 0; i < values.length; i++) {
-        if (scrollY >= values[i].pTop && scrollY < values[i].pBottom){
-          // console.log(i);
-          indexToReturn = i;
-        }
+    // When you click "previous", go back one. Show the corresponding caption and overlay. When you reach the first slide, go back to the last one.
+    $("#prev").click(function(){
+      // console.log(current);
+      if (current == 0) {
+        current = max;
+        display_caption(current);
+      } else {
+        current = current - 1;
+        display_caption(current);
       }
-      return indexToReturn;
-    }
-    
-    function setupScrollEvents() {
-      // when the sidebar scrolls, figure out which caption it is and trigger a click on that zoom target.
-      $('.sidebar').scroll(function() {
-        // calculate the amount you've scrolled down the page
-        var scroll_amt = $(this).scrollTop()+ $(this).offset().top
-        console.log(scroll_amt);
-        // pass that to the getCaption variable
-        caption = getCaption(scroll_amt);
-        console.log(caption);
+    });
 
-        // now, simulate clicking on the right zoomTarget. If you're back to the beginning, click to zoom out.
-        if (caption == 0) {
-          $('.zoomViewport').trigger("click");
-        } else {
-          $('.zoomTarget[data-index="' + caption + '"]').trigger("click");
-        }
-      });
+    function display_caption(i) {
+      current_caption = captions[i];
+      $('.caption-frame').html(current_caption);
+    }
+
+    function display_overlay(i) {
+      current_overlay = overlays[i];
+      $(".overlay").hide();
+      $(".overlay").eq(i - 1).show();
     }
 
     // do these things when the page loads.
     $(document).ready(function(){
-      // size();
-      // getValues();
-      // setupScrollEvents();
+      $(".overlay").hide();
     });
 
   </script>

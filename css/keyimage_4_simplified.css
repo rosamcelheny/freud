@@ -4,8 +4,6 @@
 	background-color:rgb(216,202,173);
 }
 
-
-
 /*This file has the positions of the zoomTarget(s) for each image.*/
 .zoomTarget[data-index="1"] {
     position:absolute;
@@ -34,6 +32,16 @@
     /* border:1px solid green; */
 }
 
+.overlay[data-index="3"] {
+  position: absolute;
+  top: 12%;
+  left: 6%;
+  width: 16%;
+  height: 21%;
+  border: 2px solid maroon;
+  border-radius: 50%; 
+}
+
 .zoomTarget[data-index="4"] {
     position:absolute;
     top: 0%;
@@ -41,6 +49,16 @@
     width: 50%;
     height: 50%;
     /* border:1px solid blue; */
+}
+
+.overlay[data-index="4"] {
+    position: absolute;
+    top: 3%;
+    left: 20%;
+    width: 18%;
+    height: 23%;
+    border-radius: 50%;
+    border: 1px solid maroon;
 }
 
 .zoomTarget[data-index="5"] {
