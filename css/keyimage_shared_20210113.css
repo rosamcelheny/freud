@@ -15,9 +15,9 @@ body {
     align-items: center;
     height: 100vh;
     width:100vw;
-	/* prevents white line from showing at top */
-    margin-top:-1.5em;
-    
+	/* prevents white line from showing at top
+	but makes another white line show at the bottom */ 
+    /* margin-top:-1.5em;  */  
 }
 
 .zoomViewport {
