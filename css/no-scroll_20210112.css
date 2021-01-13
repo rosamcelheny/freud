@@ -15,6 +15,8 @@ body {
     align-items: center;
     height: 100vh;
     width:100vw;
+    margin-top:0px;
+    
 }
 
 .zoomViewport {
@@ -67,12 +69,36 @@ div {
     font-family: Avenir, Arial, Helvetica, sans-serif;
     cursor:pointer;
     display:inline-block;
+    
 }
 
 #link:hover, .zoomButton:hover {
     background-color:#F5DEB3;
     
 }
+
+/*style for return-link button*/
+#return-link  {
+    width:100%;
+    height: 100%;
+    /* border:1px solid #232323; */
+    background-color:rgba(255, 255, 255, 0.5);
+    color:black;
+    z-index:2;
+    font-size:20px;
+    /* line-height:60px; */
+    text-align:center;
+    font-family: Avenir, Arial, Helvetica, sans-serif;
+    cursor:pointer;
+    display:inline-block;
+    
+}
+
+#return-link:hover {
+    background-color:#F5DEB3;
+    
+}
+
 
 .caption-frame {
   display:inline-block;
