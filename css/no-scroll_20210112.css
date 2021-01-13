@@ -48,20 +48,21 @@ div {
   align-items: flex-end;
   justify-content: space-between;
 }
-
+    
 .navigation {
   display:inline-block;
 }
 
 /*style for link button*/
 #link, .zoomButton {
-    width:150px;
-    height:2em;
-    border:1px solid #eee;
+    width:10%;
+    height: 3.4em;
+    /* border:1px solid #eee; */
+    background-color:rgba(255, 255, 255, 0.5);
     color:black;
     z-index:2;
     font-size:20px;
-    line-height:45px;
+    line-height:60px;
     text-align:center;
     font-family: Avenir, Arial, Helvetica, sans-serif;
     cursor:pointer;
@@ -69,26 +70,29 @@ div {
 }
 
 #link:hover, .zoomButton:hover {
-    background-color:#bbb;
-    border: 1px solid #999;
+    background-color:#F5DEB3;
+    
 }
 
 .caption-frame {
   display:inline-block;
   background-color:rgba(255, 255, 255, 0.5);
-  padding:0.5em;
-  width: calc(100% - 2em - 300px);
+  padding-left:1.5em;
+  padding-right:1.5em;
+  min-height: 4em;
+  width: calc(60% - 2em);
 }
 
 /*style caption here*/
 .caption {
-  margin:0;
+  margin:1em;
   font-size:20px;
   font-family: Avenir, Arial, Helvetica, sans-serif;
 }
 
 .caption p {
-  margin:0;
+  margin:1em;
+  text-align:left;
 }
 
 .overlay {
