@@ -15,7 +15,8 @@ body {
     align-items: center;
     height: 100vh;
     width:100vw;
-    margin-top:0px;
+	/* prevents white line from showing at top */
+    margin-top:-1.5em;
     
 }
 

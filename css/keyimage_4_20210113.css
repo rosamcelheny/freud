@@ -7,7 +7,7 @@
 /*This file has the positions of the zoomTarget(s) for each image.*/
 .zoomTarget[data-index="1"] {
     position:absolute;
-    top: 10%;
+    top: -10%;
     left: 0%;
     width: 100%;
     height: 100%;
@@ -16,7 +16,7 @@
 
 .zoomTarget[data-index="2"] {
     position:absolute;
-    top: 0%;
+    top: -10%;
     left: 0%;
     width: 90%;
     height: 90%;
@@ -34,7 +34,7 @@
 
 .zoomTarget[data-index="3"] {
     position:absolute;
-    top: 0%;
+    top: -10%;
     left: 10%;
     width: 60%;
     height: 80%;
@@ -53,7 +53,7 @@
 
 .zoomTarget[data-index="4"] {
     position:absolute;
-    top: 0%;
+    top: -10%;
     left: 10%;
     width: 60%;
     height: 60%;
@@ -72,7 +72,7 @@
 
 .zoomTarget[data-index="5"] {
     position:absolute;
-    top: 0%;
+    top: -10%;
     left: 10%;
     width: 60%;
     height: 60%;
@@ -91,7 +91,7 @@
 
 .zoomTarget[data-index="6"] {
     position:absolute;
-    top: 10%;
+    top: -10%;
     left: 0%;
     width: 100%;
     height: 100%;
@@ -168,7 +168,7 @@
 
 .zoomTarget[data-index="11"] {
     position:absolute;
-    top: 10%;
+    top: -10%;
     left: 0%;
     width: 100%;
     height: 100%;
