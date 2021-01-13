@@ -1,128 +1,23 @@
-<!DOCTYPE html PUBLIC>
-<html>
+<!DOCTYPE html>
+<html lang="en-US">
 	<head>
-		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"
-		name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>Freud House Floorplan</title>
-		<link href="css/houseplan.css" rel="stylesheet" type="text/css">
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<title>Freud House Floorplan with In-line styles</title>
+<!-- 
+		this uses CSS code inside each Div as req'd for Open Scholar
+		was uploaded for review 1/8/21
+ -->
 	</head>
 	<body>
-		<div id="houseplan"><img src="images/houseplan.jpg" width="100%">
-		
-				<div id="hilite1"
-					ontouchstart="myFunction1()"
-					onmousedown="myFunction1()"
-					ontouchend="myFunction1a()"
-					onmouseup="myFunction1a()"
-					onclick="myFunction1a()">
-					<p class="num">1</p>
-				</div>
-			
-				<div id="hilite2"
-					ontouchstart="myFunction2()"
-					onmousedown="myFunction2()"
-					ontouchend="myFunction2a()"
-					onmouseup="myFunction2a()"
-					onclick="myFunction2a()">
-					<p class="num">2</p>
-					</div>
-				
-				<div id="hilite3"
-					ontouchstart="myFunction3()"
-					onmousedown="myFunction3()"
-					ontouchend="myFunction3a()"
-					onmouseup="myFunction3a()"
-					onclick="myFunction3a()">
-					<p class="num">3</p>
-					</div>
-				
-				<div id="hilite4"
-					ontouchstart="myFunction4()"
-					onmousedown="myFunction4()"
-					ontouchend="myFunction4a()"
-					onmouseup="myFunction4a()"
-					onclick="myFunction4a()">
-					<p class="num">4</p>
-					</div>
-				
-				<div id="hilite5"
-					ontouchstart="myFunction5()"
-					onmousedown="myFunction51()"
-					ontouchend="myFunction51a()"
-					onmouseup="myFunction5a()"
-					onclick="myFunction5a()">
-					<p class="num">5</p>
-					</div>
-				
-				<div id="hilite6"
-					ontouchstart="myFunction6()"
-					onmousedown="myFunction6()"
-					ontouchend="myFunction6a()"
-					onmouseup="myFunction6a()"
-					onclick="myFunction61a()">
-					<p class="num">6</p>
-					</div>		
-		</div>
-		
-		<script>	
-			
-			function myFunction1() {
-				document.getElementById("hilite1").style.opacity = "1.0";
-				}
-				
-			function myFunction1a() {
-				document.getElementById("hilite1").style.opacity = "0";
-				window.location.assign("https://scholar.harvard.edu/agriswold/1st-choice");
-				}
-			
-			function myFunction2() {
-				document.getElementById("hilite2").style.opacity = "1.0";
-				}
-
-			function myFunction2a() {
-				document.getElementById("hilite2").style.opacity = "0";
-				window.location.assign("https://scholar.harvard.edu/agriswold/2nd-choice");
-				}
-				
-			function myFunction3() {
-				document.getElementById("hilite3").style.opacity = "1.0";
-				}
-			
-			function myFunction3a() {
-				document.getElementById("hilite3").style.opacity = "0";
-				window.location.assign("https://scholar.harvard.edu/agriswold/3rd-choice");
-				}
-				
-			function myFunction4() {
-				document.getElementById("hilite4").style.opacity = "1.0";
-				}
-			
-			function myFunction4a() {
-				document.getElementById("hilite4").style.opacity = "0";
-				window.location.assign("https://scholar.harvard.edu/agriswold/4th-choice");
-				}
-				
-			function myFunction5() {
-				document.getElementById("hilite5").style.opacity = "1.0";
-				}
-			
-			function myFunction5a() {
-				document.getElementById("hilite5").style.opacity = "0";
-				window.location.assign("https://scholar.harvard.edu/agriswold/5th-choice");
-				}
-				
-			function myFunction6() {
-				document.getElementById("hilite6").style.opacity = "1.0";
-				}
-			
-			function myFunction6a() {
-				document.getElementById("hilite6").style.opacity = "0";
-				window.location.assign("https://scholar.harvard.edu/agriswold/6th-choice");
-				}
-				
-		</script>
-	
-		
+		<div class="houseplan" style="left:0px; top:0px; position:relative;">
+			<img src="https://freud.alexgriswold.com/images/houseplan.jpg" style="width:100%;" alt="Drawing of hypothetical house for Sigmund Freud">
+			<a href="https://scholar.harvard.edu/agriswold/1st-choice"><div class="hilite" style="background-color:#fbe2c1; opacity:50%; position:absolute; left:15.2%; top:12.4%; width:14.0%; height:17.0%;"> </div></a>
+			<a href="https://scholar.harvard.edu/agriswold/2nd-choice"><div class="hilite" style="background-color:#fbe2c1; opacity:50%; position:absolute; left:32.4%; top:12.8%; width:11.7%; height:31.3%;"> </div></a>
+			<a href="https://scholar.harvard.edu/agriswold/3rd-choice"><div class="hilite" style="background-color:#fbe2c1; opacity:50%; position:absolute; left:23.0%; top:48.5%; width:21.7%; height:13.0%;"> </div></a>
+			<a href="https://scholar.harvard.edu/agriswold/4th-choice"><div class="hilite" style="background-color:#fbe2c1; opacity:50%; position:absolute; left:14.6%; top:33.2%; width:14.5%; height:10.7%;"> </div></a>
+			<a href="https://scholar.harvard.edu/agriswold/5th-choice"><div class="hilite" style="background-color:#fbe2c1; opacity:50%; position:absolute; left:14.6%; top:66.6%; width:14.9%; height:19.7%;"> </div></a>
+			<a href="https://scholar.harvard.edu/agriswold/6th-choice"><div class="hilite" style="background-color:#fbe2c1; opacity:50%; position:absolute; left:31.9%; top:65.4%; width:13.0%; height:20.7%;"> </div></a>
+		</div>		
 		
 		
 		</body>

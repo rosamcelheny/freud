@@ -4,8 +4,8 @@
   <head>
     <title>Key Image: The Petromyzon and the Riddle of the Eel, 1876</title>
     <!-- styles for this page -->
-    <link rel="stylesheet" href="css/no-scroll.css" type="text/css" media="screen" />
-    <link rel="stylesheet" href="css/keyimage_4_simplified.css" type="text/css" media="screen" />
+    <link rel="stylesheet" href="css/keyimage_shared_20210113.css" type="text/css" media="screen" />
+    <link rel="stylesheet" href="css/keyimage_4_20210113.css" type="text/css" media="screen" />
     
     <!-- jquery library -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js" type="text/javascript"></script>
@@ -18,9 +18,10 @@
         <div class="zoomViewport">
           <div class="zoomContainer">
             <!-- these divs are the clickable parts of the drawing. make sure that the data-index of the zoomTarget matches the data-index of the caption. Also, the next/previous buttons go in order.
-            note: add 'data-debug=true' if you want the red boxes to appear for debugging. -->
-            <!-- added data-targetsize="x" to reduce scale change on first zoom -->
-            <div class="zoomTarget" data-targetsize="0.95" data-index="1"></div>
+            note: add 'data-debug=true' if you want the red boxes to appear for debugging.    can add data-targetsize="0.95" to reduce scale but not neededd -->
+            
+            
+            <div class="zoomTarget" data-index="1"></div>
             <div class="zoomTarget" data-index="2"></div>
             <div class="zoomTarget" data-index="3"></div>
             <div class="zoomTarget" data-index="4"></div>
@@ -30,6 +31,7 @@
             <div class="zoomTarget" data-index="8"></div>
             <div class="zoomTarget" data-index="9"></div>
             <div class="zoomTarget" data-index="10"></div>
+            <div class="zoomTarget" data-index="11"></div>
            
             <!-- Overlays go here -->
             <div class="overlay" data-index="1"></div>
@@ -42,6 +44,7 @@
             <div class="overlay" data-index="8"></div>
             <div class="overlay" data-index="9"></div>
             <div class="overlay" data-index="10"></div>
+            <div class="overlay" data-index="11"></div>
             
             <!-- drawing goes here -->
             <img id="drawing" src="images/keyimage_4.jpg">      
@@ -51,13 +54,13 @@
 
     <!-- bar at the bottom of the screen -->
     <div class="controls">
-      <div id="prev" class="zoomButton" data-type="prev" data-root=".zoomViewport">←&nbsp;Previous</div>
+      <div id="prev" class="zoomButton" data-type="prev" data-root=".zoomViewport">< Back</div>
       
       <div class="caption-frame"> 
           <h1 class="caption">The Petromyzon and the Riddle of the Eel</h1>
       </div>
 
-      <div id="next" class="zoomButton" data-type="next" data-root=".zoomViewport">Next&nbsp;→</div>
+      <div id="next" class="zoomButton" data-type="next" data-root=".zoomViewport">Next ></div>
     </div>
 
     <!-- captions here -->
@@ -90,12 +93,17 @@
     </div>
     <div class="caption" data-index="10">
       <p>On both the right and left hand side, branches of nerve fibers (<i>nf</i>) spread out of the spinal cord (marked <i>Rmk</i>) through a larger plexus of nerve fibers (<i>A</i>).</p>
+     </div> 
+     
+        
+<!-- put in a link to get out of interactive  -->
+	<div class="caption" data-index="11">   
+      <div id="return-link">
+          <a  href="https://scholar.harvard.edu/agriswold/freud-interactives">Return</a>
+      </div>
     </div> 
   
-    <!-- put in a link to get out of interactive  -->   
-      <div id="link">
-          <a href="https://scholar.harvard.edu/agriswold/freud-interactives">Return</a>
-      </div>
+    
            
   </body>
   <script>
