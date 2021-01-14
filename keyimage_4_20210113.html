@@ -3,6 +3,7 @@
   
   <head>
     <title>Key Image: The Petromyzon and the Riddle of the Eel, 1876</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- styles for this page -->
     <link rel="stylesheet" href="css/keyimage_shared_20210113.css" type="text/css" media="screen" />
     <link rel="stylesheet" href="css/keyimage_4_20210113.css" type="text/css" media="screen" />
@@ -139,9 +140,11 @@
       if (current == 0) {
         current = max;
         display_caption(current);
+        display_overlay(current);
       } else {
         current = current - 1;
         display_caption(current);
+        display_overlay(current);
       }
     });
 

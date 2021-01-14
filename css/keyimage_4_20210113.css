@@ -4,6 +4,10 @@
 	background-color:rgb(216,202,173);
 }
 
+.zoomTarget {
+    /*border:1px solid red;*/
+}
+
 /*This file has the positions of the zoomTarget(s) for each image.*/
 .zoomTarget[data-index="1"] {
     position:absolute;
