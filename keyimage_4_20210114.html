@@ -15,101 +15,90 @@
   </head>
 
   <body>
-   <!--  <div class='outer_container'> -->
-        <div class="zoomViewport">
-          <div id="container" class="zoomContainer">
-            <!-- these divs are the clickable parts of the drawing. make sure that the data-index of the zoomTarget matches the data-index of the caption. Also, the next/previous buttons go in order.
-            note: add 'data-debug=true' if you want the red boxes to appear for debugging.    can add data-targetsize="0.95" to reduce scale but not neededd -->
-            
-            <!-- <div class="zoomTarget" data-index="1"></div> -->
-            <div class="zoomTarget" data-index="2"></div>
-            <div class="zoomTarget" data-index="3"></div>
-            <div class="zoomTarget" data-index="4"></div>
-            <div class="zoomTarget" data-index="5"></div>
-            <div class="zoomTarget" data-index="6"></div>
-            <div class="zoomTarget" data-index="7"></div>
-            <div class="zoomTarget" data-index="8"></div>
-            <div class="zoomTarget" data-index="9"></div>
-            <div class="zoomTarget" data-index="10"></div>
-            <div class="zoomTarget" data-index="11"></div>
-           
-            <!-- Overlays go here -->
-            <div class="overlay" data-index="1"></div>
-            <div class="overlay" data-index="2"></div>
-            <div class="overlay" data-index="3"></div>
-            <div class="overlay" data-index="4"></div>
-            <div class="overlay" data-index="5"></div>
-            <div class="overlay" data-index="6"></div>
-            <div class="overlay" data-index="7"></div>
-            <div class="overlay" data-index="8"></div>
-            <div class="overlay" data-index="9"></div>
-            <div class="overlay" data-index="10"></div>
-            <div class="overlay" data-index="11"></div>
-            
-            <!-- drawing goes here -->
-            <img id="drawing" src="images/keyimage_4.jpg">      
-          </div>
+      <div class="zoomViewport">
+        <div id="container" class="zoomContainer">
+          <div class="zoomTarget" data-index="0"></div>
+          <!-- <div class="zoomTarget" data-index="1"></div> -->
+          <div class="zoomTarget" id="zoom-test" data-index="2"></div>
+          <div class="zoomTarget" data-index="3"></div>
+          <div class="zoomTarget" data-index="4"></div>
+          <div class="zoomTarget" data-index="5"></div>
+          <div class="zoomTarget" data-index="6"></div>
+          <div class="zoomTarget" data-index="7"></div>
+          <div class="zoomTarget" data-index="8"></div>
+          <div class="zoomTarget" data-index="9"></div>
+          <div class="zoomTarget" data-index="10"></div>
+          <!-- <div class="zoomTarget" data-index="11"></div> -->
+         
+          <!-- Overlays go here -->
+          <div class="overlay" data-index="0"></div>
+          <div class="overlay" data-index="1"></div>
+          <div class="overlay" data-index="2"></div>
+          <div class="overlay" data-index="3"></div>
+          <div class="overlay" data-index="4"></div>
+          <div class="overlay" data-index="5"></div>
+          <div class="overlay" data-index="6"></div>
+          <div class="overlay" data-index="7"></div>
+          <div class="overlay" data-index="8"></div>
+          <div class="overlay" data-index="9"></div>
+          <div class="overlay" data-index="10"></div>
+          <div class="overlay" data-index="11"></div>
+          
+          <!-- drawing goes here -->
+          <img id="drawing" src="images/keyimage_4.jpg">     
         </div>
-   <!--  </div> -->
+      </div>
 
     <!-- bar at the bottom of the screen -->
     <div class="controls">
       <div id="prev" class="button" data-type="prev" data-root=".zoomViewport">< Back</div>
-      
-      <div class="caption-frame"> 
-          <h1 class="caption">The Petromyzon and the Riddle of the Eel</h1>
+      <div class="caption-frame">
+         <!-- Title is not also a caption. -->
+          <h1 id="title">The Petromyzon and the Riddle of the Eel</h1>
       </div>
-
       <div id="next" class="button" data-type="next" data-root=".zoomViewport">Next ></div>
     </div>
 
     <!-- captions here -->
+    <h1 class="caption" data-index="0">Caption #0 The Petromyzon and the Riddle of the Eel</h1>
     <div class="caption" data-index="1">
-      <p>The drawing is an aggregate of various cross-sections and staining of the <i>Petromyzon</i>.</p>
+      <p>Caption #1 The drawing is an aggregate of various cross-sections and staining of the <i>Petromyzon</i>.</p>
     </div>
     <div class="caption" data-index="2">
-      <p>In Figure 1, we see a posterior view of the <i>Petromyzon's</i> nerves.</p>
+      <p>Caption #2 In Figure 1, we see a posterior view of the <i>Petromyzon's</i> nerves.</p>
     </div>
     <div class="caption" data-index="3">
-      <p>The spinal ganglionic cell (<i>spz</i>), an archaic aggregation of nerve cells, is located in the left corner.</p>
+      <p>Caption #3 The spinal ganglionic cell (<i>spz</i>), an archaic aggregation of nerve cells, is located in the left corner.</p>
     </div>
     <div class="caption" data-index="4">
-      <p>Freud includes many elements of the nervous system, while following one nerve fiber as it accompanies a microscopic blood vessel (<i>gbf</i>).</p>
+      <p>Caption #4 Freud includes many elements of the nervous system, while following one nerve fiber as it accompanies a microscopic blood vessel (<i>gbf</i>).</p>
     </div>
     <div class="caption" data-index="5">
-      <p>Freud also illustrates a varicose axon of a nerve cell (<i>ff</i>), a part of a nerve fiber not coated with any other cells, and thus with a lower conductivity level. </p>
+      <p>Caption #5 Freud also illustrates a varicose axon of a nerve cell (<i>ff</i>), a part of a nerve fiber not coated with any other cells, and thus with a lower conductivity level. </p>
     </div>
     <div class="caption" data-index="6">
-      <p>The capacity to see nerve cells with such a high level of precision was one of the most novel elements in nerve histology and was the result of a staining technique developed by the Spanish neurobiologist Cajal. </p>
+      <p>Caption #6 The capacity to see nerve cells with such a high level of precision was one of the most novel elements in nerve histology and was the result of a staining technique developed by the Spanish neurobiologist Cajal. </p>
     </div>
     <div class="caption" data-index="7">
-      <p>Figure 2 depicts a different branch of the posterior root of the spinal ganglion of the <i>Petromyzon</i>. </p>
+      <p>Caption #7 Figure 2 depicts a different branch of the posterior root of the spinal ganglion of the <i>Petromyzon</i>. </p>
     </div>
     <div class="caption" data-index="8">
-      <p>Of particular note are the black elements, marked as <i>zs</i>, representing spinal ganglion cells firing into the sympathetic branch of the <i>Petromyzon</i>'s nerve system.</p>
+      <p>Caption #8 Caption #1 Of particular note are the black elements, marked as <i>zs</i>, representing spinal ganglion cells firing into the sympathetic branch of the <i>Petromyzon</i>'s nerve system.</p>
     </div>
     <div class="caption" data-index="9">
-      <p>On the bottom of the drawing, Figure&nbsp;3 shows a network of nerve cells attached to the <i>pia mater</i>, one of the nerve's <i>meninges</i>, or coating, marked in drawing as <i>PM</i>.</p>
+      <p>Caption #9 On the bottom of the drawing, Figure&nbsp;3 shows a network of nerve cells attached to the <i>pia mater</i>, one of the nerve's <i>meninges</i>, or coating, marked in drawing as <i>PM</i>.</p>
     </div>
     <div class="caption" data-index="10">
-      <p>On both the right and left hand side, branches of nerve fibers (<i>nf</i>) spread out of the spinal cord (marked <i>Rmk</i>) through a larger plexus of nerve fibers (<i>A</i>).</p>
+      <p>Caption #10 On both the right and left hand side, branches of nerve fibers (<i>nf</i>) spread out of the spinal cord (marked <i>Rmk</i>) through a larger plexus of nerve fibers (<i>A</i>).</p>
      </div> 
-     
-        
-<!-- put in a link to get out of interactive  -->
-	<div class="caption" data-index="11">   
-      <div id="return-link">
-          <a  href="https://scholar.harvard.edu/agriswold/freud-interactives">Return</a>
-      </div>
-    </div> 
-  
-    
-           
+	   <div class="caption" data-index="11">   
+        <div id="return-link">
+            <a  href="https://scholar.harvard.edu/agriswold/freud-interactives">Caption #11 Return</a>
+        </div>
+     </div> 
   </body>
   <script>
-
-
-    // When you click on next/previous, advance caption appropriately.
+    // Overview: Clicking next or previous advances/steps back the "current" counter. Zooming, caption and overlay all controlled by counter.
     var caption;
     var current = 0;
     var current_caption;
@@ -118,58 +107,60 @@
     var img;
     var height;
     var width;
+    var zoom;
     
-    // Make an array of all the captions.
+    // // Make an array of all the captions.
     var captions = $(".caption");
     var max = captions.length - 1;
-
-    var overlays = $(".overlay");
     
-    // When you click "next", advance the "current" counter. Then show the corresponding caption and overlay. When you reach the last slide, go back to the beginning.
+    // Advance
     $("#next").click(function(){
       if (current < max) {
         current = current + 1;
-        console.log(current);
+        console.log("current = " + current);
       } else {
         current = 0;
-        console.log(current);
+        console.log("current = " + current);
       }
       display_caption(current);
       display_overlay(current);
       zoom(current);
     });
 
-    // When you click "previous", go back one. Show the corresponding caption and overlay. When you reach the first slide, go back to the last one.
+    // Previous
     $("#prev").click(function(){
       if (current == 0) {
         current = max;
-        console.log(current);
-
+        console.log("current = " + current);
+        display_caption(current);
       } else {
         current = current - 1;
-        console.log(current);
-        zoom(current);
+        console.log("current = " + current);
+        display_caption(current);
       }
-      display_caption(current);
       display_overlay(current);
-      
+      zoom(current);
     });
 
     function display_caption(i) {
       current_caption = captions[i];
       $('.caption-frame').html(current_caption);
+      console.log(current_caption);
     }
 
     function display_overlay(i) {
-      current_overlay = overlays[i];
       $(".overlay").hide();
-      $(".overlay").eq(i - 1).show();
+      $(".overlay[data-index='" + i +"']").show();
     }
 
     function zoom(i) {
-        var zoom = $(".zoomTarget[data-index='" + i +"']");
+      var zoom = $(".zoomTarget[data-index='" + i +"']");
+      if ((i == 0) || (i == 1) || (i == 6) || (i == 11)) {
+        console.log("nope");
+        $("#container").click();
+      } else {
         zoom.click();
-        console.log(zoom);
+      }
     }
 
     function resize() {
@@ -182,7 +173,8 @@
     }
 
     $(document).ready(function(){
-      console.log(current);
+      console.log("current = " + current);
+      console.log("max =" + max);
 
       display_caption(current);
       display_overlay(current);
@@ -191,7 +183,7 @@
 
       $(".overlay").hide();
 
-      $("#next").click();
+      zoom(current);
 
     });
   </script>
