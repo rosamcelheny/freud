@@ -1,7 +1,7 @@
 
 /* note changed bkg of zoomViewport on this page to match faded drawing */
 .zoomViewport {
-	background-color:rgb(216,202,173);
+    background-color:rgb(216,202,173);
 }
 
 .zoomTarget {
