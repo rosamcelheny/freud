@@ -18,7 +18,7 @@
       <div class="zoomViewport">
         <div id="container" class="zoomContainer">
           <div class="zoomTarget" data-index="0"></div>
-          <!-- <div class="zoomTarget" data-index="1"></div> -->
+          <div class="zoomTarget" data-index="1"></div>
           <div class="zoomTarget" id="zoom-test" data-index="2"></div>
           <div class="zoomTarget" data-index="3"></div>
           <div class="zoomTarget" data-index="4"></div>
@@ -28,7 +28,7 @@
           <div class="zoomTarget" data-index="8"></div>
           <div class="zoomTarget" data-index="9"></div>
           <div class="zoomTarget" data-index="10"></div>
-          <!-- <div class="zoomTarget" data-index="11"></div> -->
+          <div class="zoomTarget" data-index="11"></div>
          
           <!-- Overlays go here -->
           <div class="overlay" data-index="0"></div>
@@ -53,7 +53,6 @@
     <div class="controls">
       <div id="prev" class="button" data-type="prev" data-root=".zoomViewport">< Back</div>
       <div class="caption-frame">
-         <!-- Title is not also a caption. -->
           <h1 id="title">The Petromyzon and the Riddle of the Eel</h1>
       </div>
       <div id="next" class="button" data-type="next" data-root=".zoomViewport">Next ></div>
@@ -93,7 +92,9 @@
      </div> 
 	   <div class="caption" data-index="11">   
         <div id="return-link">
+          <p>
             <a  href="https://scholar.harvard.edu/agriswold/freud-interactives">Caption #11 Return</a>
+          </p>
         </div>
      </div> 
   </body>
@@ -163,6 +164,7 @@
       }
     }
 
+    // zoomViewport and drawing should be the same size.
     function resize() {
       height = $("#drawing").height();
       width = $("#drawing").width();
@@ -184,6 +186,10 @@
       $(".overlay").hide();
 
       zoom(current);
+
+      $( window ).resize(function() {
+        resize();
+      });
 
     });
   </script>
