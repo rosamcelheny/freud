@@ -22,6 +22,7 @@ body {
 #container {
   position: absolute;
   top: 0;
+  /* border:4px solid orange; */
 }
 
 /*drawing fills screen*/
@@ -136,8 +137,12 @@ div {
   }
 }
 
-@media only screen and (min-width: 1300px) {
-
+@media only screen and (min-width: 1900px) {
+/* freeze zooming and keep centered on wide screens? */
+  #container {
+    position:absolute;
+    border:1px solid brown;
+  }
 }
 
 
