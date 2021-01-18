@@ -40,10 +40,10 @@ body {
 }
 
 
-/* styling for the cases where overlay is a png
+/* styling for the cases where overlay needs to be a png
 when creating the overlays, make sure they are the same dimensions
 as the drawing (i.e. for keyimage_4 this is 1791x1411px)*/
-#overlay-image  {
+.overlay-image  {
 	width:100%;
 }
 
