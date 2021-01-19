@@ -11,18 +11,12 @@ body {
 .zoomViewport {
   margin:0;
   padding:0;
-  background-color:white;
-  display:flex;
-  flex-direction:column;
-  align-items: center;
-  justify-content:center;
-  height: 80vh;
+  height: 60vh;
 }
 
 #container {
   position: absolute;
   top: 0;
-  /* border:4px solid orange; */
 }
 
 /*drawing fills screen*/
@@ -39,7 +33,6 @@ body {
   z-index:200;
 }
 
-
 /* styling for the cases where overlay needs to be a png
 when creating the overlays, make sure they are the same dimensions
 as the drawing (i.e. for keyimage_4 this is 1791x1411px)*/
@@ -47,12 +40,10 @@ as the drawing (i.e. for keyimage_4 this is 1791x1411px)*/
 	width:100%;
 }
 
-
-/*just for debugging!
-.selectedZoomTarget {
+/*just for debugging!*/
+/*.selectedZoomTarget {
   border:1px solid lime;
 }*/
-
 
 div {
   -webkit-tap-highlight-color:rgba(0,0,0,0);
@@ -64,23 +55,26 @@ div {
   bottom: 1em;
   left: 1em;
   right: 1em;
-  min-height: 4em;
   display: flex;
-  align-items: flex-end;
-  justify-content: space-between;
+  flex-direction: column;
+  justify-content: flex-end;
+  height: 20vh;
 }
-    
-.navigation {
-  display:inline-block;
+.button {
+  position:absolute;
+  bottom:0;
+}
+#next {
+  right:0;
 }
 
 /*style for link button*/
-
 #link, .button, .caption {
   color:black;
-  font-size:20px;
+  font-size:16px;
   font-family: Avenir, Arial, Helvetica, sans-serif;
 }
+
 #link, .button {
   padding:1em;
   background-color:rgba(255, 255, 255, 0.5);
@@ -92,7 +86,6 @@ div {
 
 #link:hover, .zoomButton:hover {
   background-color:#F5DEB3;
-    
 }
 
 /*style for return-link button*/
@@ -111,21 +104,37 @@ div {
 .caption-frame {
   display:inline-block;
   background-color:rgba(255, 255, 255, 0.5);
-  padding-left:1.5em;
-  padding-right:1.5em;
-  min-height: 4em;
-  width: calc(60% - 2em);
+  padding:1em;
+  margin-bottom: 4em;
+  width: calc(100% - 2em);
 }
 
 .caption {
   display:none;
+  margin: 0;
+}
+
+.caption > p {
+  margin:0;
 }
 
 .caption-frame .caption {
   display:block;
 }
 
+/* Desktop styles */
 @media only screen and (min-width: 600px) {
+  .controls {
+    flex-direction: row;
+    align-items:flex-end;
+  }
+  .button {
+    position: relative;
+    width: 5em;
+  }
+  .caption-frame {
+    margin: 0 1em 0 1em;
+  }
   .caption {
     font-size:20px;
   }
@@ -136,15 +145,6 @@ div {
     position:relative;
   }
 }
-
-@media only screen and (min-width: 1900px) {
-/* freeze zooming and keep centered on wide screens? */
-  #container {
-    position:absolute;
-    border:1px solid brown;
-  }
-}
-
 
 
 

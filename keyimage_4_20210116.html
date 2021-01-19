@@ -110,6 +110,11 @@
     var img;
     var height;
     var width;
+    var window_width;
+    var zoomViewport_height;
+    var window_height;
+    var margin_top;
+    var margin;
     var zoom;
     
     // // Make an array of all the captions.
@@ -170,10 +175,19 @@
     function resize() {
       height = $("#drawing").height();
       width = $("#drawing").width();
+      window_width = $(window).width();
       console.log("resized to: " + height, width);
 
       $("#container").width(width);
       $("#container").height(height);
+
+      zoomViewport_height = $(".zoomViewport").height();
+      window_height = $(window).height();
+      margin_top = (zoomViewport_height - height) / 2;
+      $("#container").css("margin-top", margin_top + "px");
+        
+      margin = (window_width - width) / 2;
+      $("#container").css("margin-left", margin + "px");
     }
 
     $(document).ready(function(){
