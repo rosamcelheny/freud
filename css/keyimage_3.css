@@ -1,0 +1,158 @@
+/* note changed bkg of zoomViewport on this page to match faded drawing */
+.zoomViewport, html {
+  background-color:#e4d4bb;
+}
+
+/* note changed bkg of captions to make text more visible */
+.caption-frame, .button {
+  background-color:#ffedda;
+}
+
+
+
+/*This file has the positions of the zoomTarget(s) for each image.*/
+/* Keyimage3 ver 20210124 */
+.zoomTarget[data-index="1"] {
+    position:absolute;
+    top: 22%;
+    left: 16%;
+    width: 33%;
+    height: 33%;
+/* border:1px solid pink; */
+}
+
+.overlay[data-index="1"] {
+  position: absolute;
+  top: 28%;
+  left: 18%;
+  width: 31%;
+  height: 18%;
+  border: 2px solid maroon;
+} 
+  
+.zoomTarget[data-index="2"] {
+    position:absolute;
+    top: 22%;
+    left: 16%;
+    width: 33%;
+    height: 33%;
+    /* border:5px solid red; */
+}
+
+/* this overlay contains an image */
+.overlay[data-index="2"] {
+  position: absolute;
+    top: 0%;
+    left: 0%;
+    width: 100%;
+    height: 100%;
+}
+
+.zoomTarget[data-index="3"] {
+    position:absolute;
+    top: 22%;
+    left: 16%;
+    width: 33%;
+    height: 33%;
+    /* border:1px solid green; */
+}
+
+/* this overlay contains an image */
+.overlay[data-index="3"] {
+  position: absolute;
+    top: 0%;
+    left: 0%;
+    width: 100%;
+    height: 100%;
+}
+
+.zoomTarget[data-index="4"] {
+    position:absolute;
+    top: 28%;
+    left: 12%;
+    width: 30%;
+    height: 30%;
+    /* border:1px solid blue; */
+}
+
+
+.overlay[data-index="4"] {
+    position: absolute;
+    top: 37.6%;
+  	left: 1%;
+  	width: 18%;
+  	height: 11%;
+  	border: 2px solid maroon;
+  	border-radius: 50%;
+}
+
+
+.zoomTarget[data-index="5"] {
+    position:absolute;
+    top: 22%;
+    left: 16%;
+    width: 33%;
+    height: 33%;
+    /* border:1px solid lime; */
+}
+
+
+.overlay[data-index="5"] {
+    position: absolute;
+    top: 25%;
+  	left: 16%;
+  	width: 36%;
+  	height: 22%;
+  	border: 2px solid maroon;
+  	border-radius: 50%;
+}
+
+
+.zoomTarget[data-index="6"] {
+    position:absolute;
+    top: 22%;
+    left: 16%;
+    width: 67%;
+    height: 67%;
+    /* border:1px solid black; */
+}
+
+.overlay[data-index="6"] {
+  position: absolute;
+  top: 29%;
+  left: 56%;
+  width: 19%;
+  height: 5%;
+  border: 2px solid maroon;
+  /* border-radius: 50%; */
+}
+
+.zoomTarget[data-index="7"] {
+    position:absolute;
+    top: 22%;
+    left: 16%;
+    width: 67%;
+    height: 67%;
+    /* border:1px solid white; */
+}
+
+.overlay[data-index="7"] {
+    position: absolute;
+    top: 31.5%;
+  	left: 49%;
+  	width: 45%;
+  	height: 11%;
+    border-radius: 0%;
+    border: 2px solid maroon;
+}
+
+
+.zoomTarget[data-index="8"] {
+    position:absolute;
+    top: 22%;
+    left: 10%;
+    width: 33%;
+    height: 33%;
+/*  border:1px solid orange; */
+}
+

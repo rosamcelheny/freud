@@ -90,15 +90,6 @@
     /* border:1px solid lime; */
 }
 
-.overlay[data-index="5"] {
-    position: absolute;
-    top: 5%;
-    left: 32%;
-    width: 9%;
-    height: 12%;
-    border-radius: 50%;
-    border: 2px solid maroon;
-}
 
 .overlay[data-index="5"] {
   position: absolute;
@@ -109,6 +100,7 @@
   border: 2px solid maroon;
   border-radius: 50%;
 }
+
 
 
 .zoomTarget[data-index="6"] {
