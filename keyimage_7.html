@@ -1,0 +1,216 @@
+<!DOCTYPE HTML>
+<html lang="en">
+ <!-- original ver20210124 --> 
+  <head>
+    <title>Key Image 7: Ego/Id/Super Ego, New Introductory Lectures on Psychoanalysis (1932)</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- styles for this page -->
+    <link rel="stylesheet" href="css/keyimage_shared.css" type="text/css" media="screen" />
+    <link rel="stylesheet" href="css/keyimage_7.css" type="text/css" media="screen" />
+    
+    <!-- jquery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js" type="text/javascript"></script>
+    <!-- zoomooz library -->
+    <script type="text/javascript" src="js/jquery.zoomooz.min.js"></script>
+  </head>
+
+<body onload="resize()"> <!-- sets up image -->
+      <div class="zoomViewport">
+        <div id="container" class="zoomContainer">
+          <div class="zoomTarget" data-index="0"></div>
+          <div class="zoomTarget" data-index="1"></div>
+          <div class="zoomTarget" data-index="2"></div>
+          <div class="zoomTarget" data-index="3"></div>
+          <div class="zoomTarget" data-index="4"></div>
+          <div class="zoomTarget" data-index="5"></div>
+          <div class="zoomTarget" data-index="6"></div>
+          <div class="zoomTarget" data-index="7"></div>
+          <div class="zoomTarget" data-index="8"></div>
+          <div class="zoomTarget" data-index="9"></div>
+          <div class="zoomTarget" data-index="10"></div>
+          <div class="zoomTarget" data-index="11"></div>
+         
+          <!-- Overlays go here -->
+          <div class="overlay" data-index="0"></div>
+          <div class="overlay" data-index="1"></div>
+          <div class="overlay" data-index="2"></div>
+          <div class="overlay" data-index="3"></div>
+          <div class="overlay" data-index="4"><img class="overlay-image" src="images/keyimage_7_caption4.png"></div>
+          <div class="overlay" data-index="5"><img class="overlay-image" src="images/keyimage_7_caption5.png"></div>
+          <div class="overlay" data-index="6"></div>
+          <div class="overlay" data-index="7"></div>
+          <div class="overlay" data-index="8"></div>
+          <div class="overlay" data-index="9"></div>
+          <div class="overlay" data-index="10"></div>
+          <div class="overlay" data-index="11"></div>
+          
+          <!-- drawing goes here -->
+          <img id="drawing" src="images/keyimage_7.jpg">     
+        </div>
+      </div>
+
+    <!-- bar at the bottom of the screen -->
+    <div class="controls">
+      <div id="prev" class="button" data-type="prev" data-root=".zoomViewport">< Back</div>
+      <div class="caption-frame">
+          <h1 id="title">Ego/Id/Super Ego, New Introductory Lectures on Psychoanalysis (1932)</h1>
+      </div>
+      <div id="next" class="button" data-type="next" data-root=".zoomViewport">Next ></div>
+    </div>
+
+    <!-- captions here -->
+    <h1 class="caption" data-index="0">Ego/Id/Super Ego, New Introductory Lectures on Psychoanalysis (1932)</h1>
+    <div class="caption" data-index="1">
+      <p>1 Running clockwise from the empty circle at the bottom left, we see here a rare instance of Freud experimenting with how to best describe the psyche in five iterations.</p>
+    </div>
+    <div class="caption" data-index="2">
+      <p>2 The five versions differ primarily with respect to the relation between the Ego <i>(Ich)</i> and the Preconscious (<i>Vorbewusst</i> or <i>VBW</i>), as well as the relation between the Ego and the Id <i>(Es)</i>.</p>
+    </div>
+    <div class="caption" data-index="3">
+      <p>3 In each diagram, Freud slightly alters the space allotted to each element in the psyche.</p>
+    </div>
+    <div class="caption" data-index="4">
+      <p>4 Repression <i>(Verdr&auml;ngung)</i> is represented  as a truncated double line on each diagram&rsquo;s right side. </p>
+    </div>
+    <div class="caption" data-index="5">
+      <p>5 The dotted lines that run vertically through three of the diagrams mark the divide between the perceptual consciousness (<i>Wahrmehmungs-Bewusstein</i> or <i>W-Bw</i>) and the unconscious.</p>
+    </div>
+    <div class="caption" data-index="6">
+      <div id="return-link"> 
+            <a  href="https://scholar.harvard.edu/agriswold/freud-interactives">Return</a>       
+        </div>
+    </div>
+
+
+ 
+
+
+
+
+
+
+
+  </body>
+  <script>
+    // Overview: Clicking next or previous advances/steps back the "current" counter. Zooming, caption and overlay all controlled by counter.
+    var caption;
+    var current = 0;
+    var current_caption;
+    var current_zoom;
+    var current_overlay;
+    var img;
+    var height;
+    var width;
+    var window_width;
+    var zoomViewport_height;
+    var window_height;
+    var margin_top;
+    var margin;
+    var zoom;
+    
+    // // Make an array of all the captions.
+    var captions = $(".caption");
+    var max = captions.length - 1;
+    
+    // Advance
+    $("#next").click(function(){
+      if (current < max) {
+        current = current + 1;
+        console.log("current = " + current);
+      } else {
+        current = 0;
+        console.log("current = " + current);
+      }
+      display_caption(current);
+      display_overlay(current);
+      zoom(current);
+    });
+
+    // Previous
+    $("#prev").click(function(){
+      if (current == 0) {
+        current = max;
+        console.log("current = " + current);
+        display_caption(current);
+      } else {
+        current = current - 1;
+        console.log("current = " + current);
+        display_caption(current);
+      }
+      display_overlay(current);
+      zoom(current);
+    });
+
+    function display_caption(i) {
+      current_caption = captions[i];
+      $('.caption-frame').html(current_caption);
+      console.log(current_caption);
+    }
+
+    function display_overlay(i) {
+      $(".overlay").hide();
+      $(".overlay[data-index='" + i +"']").show();
+    }
+
+    function zoom(i) {
+      var zoom = $(".zoomTarget[data-index='" + i +"']");
+      if ((i == 0) || (i == 6)) {
+        console.log("nope");
+        $("#container").click();
+      } else {
+        zoom.click();
+      }
+    }
+
+    // zoomViewport and drawing should be the same size.
+    function resize() {
+      height = $("#drawing").height();
+      width = $("#drawing").width();
+      window_width = $(window).width();
+      console.log("resized to: " + height, width);
+
+      $("#container").width(width);
+      $("#container").height(height);
+
+      zoomViewport_height = $(".zoomViewport").height();
+      window_height = $(window).height();
+      margin_top = (zoomViewport_height - height) / 2;
+      $("#container").css("margin-top", margin_top + "px");
+        
+      margin = (window_width - width) / 2;
+      $("#container").css("margin-left", margin + "px");
+    }
+
+    $(document).ready(function(){
+      console.log("current = " + current);
+      console.log("max =" + max);
+
+      display_caption(current);
+      display_overlay(current);
+
+      resize();
+
+      $(".overlay").hide();
+
+      zoom(current);
+
+      $( window ).resize(function() {
+        resize();
+      });
+
+    });
+  </script>
+</html>
+ 
+
+
+ 
+
+ 
+
+
+
+
+
+
+ 

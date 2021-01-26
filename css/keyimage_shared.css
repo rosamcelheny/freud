@@ -78,7 +78,8 @@ div {
 
 #link, .button {
   padding:0.8em;
-  background-color:rgba(255, 255, 255, 0.5);
+  /* background-color:rgba(255, 255, 255, 0.5); */
+  background-color:#ffedda;
   z-index:2;
   text-align:center;
   cursor:pointer;
@@ -91,7 +92,9 @@ div {
 
 /*style for return-link button*/
 #return-link  {
-  margin: auto; 
+  margin: auto;
+  height: 1.4em; /* tweaked to make same height as links */
+  padding:0px;
   color:black;
   z-index:2;
   text-align:center;
@@ -104,7 +107,8 @@ div {
 
 .caption-frame {
   display:inline-block;
-  background-color:rgba(255, 255, 255, 0.5);
+  /* background-color:rgba(255, 255, 255, 0.5); */
+  background-color:#ffedda;
   padding:1em;
   margin-bottom: 4em;
   width: calc(100% - 2em);

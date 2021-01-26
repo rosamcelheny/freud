@@ -1,0 +1,125 @@
+/* note changed bkg of zoomViewport on this page to match faded drawing */
+.zoomViewport, html {
+  background-color:#e4d4bb;
+}
+
+/* 
+caption-frame, .button {
+  background-color:#ffedda;
+}
+ */
+
+
+
+/*This file has the positions of the zoomTarget(s) for each image.*/
+/* Keyimage7 - original aspect ratio: 0.61 - ver 20210126 */
+.zoomTarget[data-index="1"] {
+    position:absolute;
+    top: 11%;
+    left: 20%;
+    width: 50%;
+    height: 50%;
+/* border:1px solid pink; */
+}
+
+.overlay[data-index="1"] {
+  position: absolute;
+  top: 24.5%;
+  left: 8%;
+  width: 31%;
+  height: 18.9%;
+  border: 2px solid maroon;
+  border-radius: 50%;
+} 
+
+  
+.zoomTarget[data-index="2"] {
+    position:absolute;
+    top: 11%;
+    left: 20%;
+    width: 50%;
+    height: 50%;
+    /* border:5px solid red; */
+}
+
+/* 
+.overlay[data-index="2"] {
+  	position: absolute;
+    top: 1%;
+    left: 1%;
+    width: 53%;
+    height: 49%;
+    border: 2px solid maroon;
+  	border-radius: 0%;
+}
+ */
+    
+   
+.zoomTarget[data-index="3"] {
+    position:absolute;
+    top: 11%;
+    left: 20%;
+    width: 50%;
+    height: 50%;
+    /* border:10px solid green; */
+}
+
+/* 
+.overlay[data-index="3"] {
+    position: absolute;
+    top: 1%;
+    left: 1%;
+    width: 53%;
+    height: 49%;
+    border: 2px solid maroon;
+  	border-radius: 0%;
+}
+ */
+
+
+.zoomTarget[data-index="4"] {
+    position:absolute;
+    top: 11%;
+    left: 20%;
+    width: 50%;
+    height: 50%;
+    /* border:1px solid blue; */
+}
+
+
+/* this overlay contains an image */
+.overlay[data-index="4"] {
+  position: absolute;
+    top: 0%;
+    left: 0%;
+    width: 100%;
+    height: 100%;
+}
+
+.zoomTarget[data-index="5"] {
+    position:absolute;
+    top: 11%;
+    left: 20%;
+    width: 50%;
+    height: 50%;
+    /* border:1px solid lime; */
+}
+
+/* this overlay contains an image */
+.overlay[data-index="5"] {
+  position: absolute;
+    top: 0%;
+    left: 0%;
+    width: 100%;
+    height: 100%;
+}
+
+
+.zoomTarget[data-index="6"] {
+    position:absolute;
+    top: 0%;
+    left: 0%;
+    width: 100%;
+    height: 100%;
+/*  border:1px solid tan; */
+}
