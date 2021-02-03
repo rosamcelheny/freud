@@ -32,12 +32,12 @@
          
           <!-- Overlays go here -->
           <div class="overlay" data-index="0"></div>
-          <div class="overlay" data-index="1">this is a work in progress waiting for illustration to be completed. </div>
+          <div class="overlay" data-index="1"></div>
           <div class="overlay" data-index="2"></div>
           <div class="overlay" data-index="3"></div>
           <div class="overlay" data-index="4"></div>
           <div class="overlay" data-index="5"></div>
-          <div class="overlay" data-index="6"><img class="overlay-image" src="images/keyimage_4_caption6.png"></div>
+          <div class="overlay" data-index="6"></div>
           <div class="overlay" data-index="7"></div>
           <div class="overlay" data-index="8"></div>
           <div class="overlay" data-index="9"></div>
@@ -61,27 +61,30 @@
     <!-- captions here -->
     <h1 class="caption" data-index="0">Illustration of Freud's Consulting Room</h1>
     <div class="caption" data-index="1">
-      <p>1 room callout.</p>
+      <p>1 This bas-relief of Gradiva fascinated Freud, who developed Gradiva, the &ldquo;lady who paces away,&rdquo; into a paradigm for analysis. More about her significance is presented in the final section.</p>
     </div>
     <div class="caption" data-index="2">
-      <p>2  room callout.</p>
+      <p>2 This painting of Oedipus and the Sphinx, copied after Jean August Dominique Ingres (1808), testifies to Freud&rsquo;s continuing engagement with the Greek tragedy Oedipus Rex.  The Oedipus complex&mdash;named for the protagonist who kills his father and marries his mother&mdash;was at the very center of Freud&rsquo;s theory.</p>
     </div>
     <div class="caption" data-index="3">
-      <p>3  room callout.</p>
+      <p>3 The couch is perhaps the most iconic and universal of psychoanalytic objects.  Patients recumbent on the couch could not see Freud, seated in the chair behind their heads - meant to insure they would not be distracted by looking at him, thus allowing the freest possible movement of unconscious material to consciousness.</p>
     </div>
     <div class="caption" data-index="4">
-      <p>4  room callout.</p>
+      <p>4 Freud sat here while patients spoke, out of their line of sight.</p>
     </div>
     <div class="caption" data-index="5">
-      <p>5  room callout.</p>
+      <p>5 This image shows the Egyptian cliff temple of Ramesses II at Abu Simbel. Considered the greatest of the pharaohs, Ramsesses II was a figure with whose strength and power Freud possibly identified.</p>
     </div>
     <div class="caption" data-index="6">
-      <p>6  room callout.</p>
+      <p>6 The falcon-headed Egyptian god Horus was part of Freud&rsquo;s voluminous collection of antiquities. The son of Isis and Osiris, Horus had intrigued Freud since childhood, when he encountered him in the family&rsquo;s lavishly illustrated Phillipson Bible.</p>
     </div>
     <div class="caption" data-index="7">
-      <p>7  room callout.</p>
+      <p>7 The black ceramic tiled stove regulated the room&rsquo;s temperature, with two water tubes that maintained a constant level of humidity.</p>
     </div>
     <div class="caption" data-index="8">
+      <p>8 The oriental rugs on the floor and atop the small table on the left side of the room, as well as on the couch and wall behind it, are the only patterned elements in the room. <i>Fin si&egrave;cle</i> Viennese were entranced by arabesque patterns, believing in its psychosomatic effects.</p>
+    </div>
+    <div class="caption" data-index="9">
       <div id="return-link"> 
             <a  href="https://scholar.harvard.edu/agriswold/freud-interactives">Return</a>       
         </div>
@@ -90,7 +93,7 @@
      <script>
         function zoom(i) {
           var zoom = $(".zoomTarget[data-index='" + i +"']");
-          if ((i == 0) || (i == 8)) {
+          if ((i == 0) || (i == 8) || (i == 9)) {
             console.log("nope");
             $("#container").click();
           } else {

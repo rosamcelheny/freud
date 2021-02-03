@@ -3,51 +3,60 @@
   background-color:#e4d4bb;
 }
 
+
+/* override shared.css to make zoomViewport height bigger since
+image is wide format */
+.zoomViewport {
+  margin:0;
+  padding:0;
+  height: 80vh;
+}
+
 /* 
 caption-frame, .button {
   background-color:#ffedda;
 }
  */
 
-
+ /* the aspect ratio needed for square overlays is different for every keyimage. 
+ For this image it is 1:2.36  */
 
 /*This file has the positions of the zoomTarget(s) for each image.*/
-/* Keyimage5 ver 20210126 */
+/* Keyimage5 20200203 Happy Birthday Rosa! */
+
 .zoomTarget[data-index="1"] {
     position:absolute;
-    top: 0%;
-    left: 5%;
-    width: 90%;
-    height: 70%
+    top: 40%;
+    left: 33%;
+    width: 60%;
+    height: 30%
 /* border:1px solid pink; */
 }
 
 .overlay[data-index="1"] {
   position: absolute;
-  top: 4%;
-  left: 55%;
-  width: 35%;
-  height: 10%;
+  top: 31.3%;
+  left: 61.3%;
+  width: 4.75%;
+  height: 18.8%;
   border: 2px solid maroon;
 } 
   
 .zoomTarget[data-index="2"] {
     position:absolute;
-    top: 0%;
-    left: 5%;
-    width: 90%;
-    height: 70%
+    top: 28%;
+    left: 40%;
+    width: 42%;
+    height: 42%
     /* border:5px solid red; */
 }
 
-
-
 .overlay[data-index="2"] {
   	position: absolute;
-    top: 1%;
-    left: 1%;
-    width: 53%;
-    height: 49%;
+    top: 39.8%;
+    left: 59.35%;
+    width: 1.85%;
+    height: 5.6%;
     border: 2px solid maroon;
   	border-radius: 0%;
 }
@@ -55,40 +64,40 @@ caption-frame, .button {
     
 .zoomTarget[data-index="3"] {
     position:absolute;
-    top: 0%;
-    left: 5%;
-    width: 90%;
-    height: 70%
+    top: 33%;
+    left: 25%;
+    width: 45%;
+    height: 45%
     /* border:10px solid green; */
 }
 
 .overlay[data-index="3"] {
     position: absolute;
-    top: 1%;
-    left: 1%;
-    width: 53%;
-    height: 49%;
+    top: 38%;
+    left: 38%;
+    width: 25%;
+    height: 45%;
     border: 2px solid maroon;
-  	border-radius: 0%;
+  	border-radius: 50%;
 }
 
 
 .zoomTarget[data-index="4"] {
     position:absolute;
-    top: 0%;
-    left: 5%;
-    width: 90%;
-    height: 70%
+    top: 33%;
+    left: 25%;
+    width: 45%;
+    height: 45%
     /* border:1px solid blue; */
 }
 
 
 .overlay[data-index="4"] {
     position: absolute;
-    top: 20%;
-  	left: 22%;
-  	width: 20%;
-  	height: 15%;
+    top: 50%;
+    left: 29.5%;
+    width: 13%;
+    height: 30.7%;
   	border: 2px solid maroon;
   	border-radius: 50%;
 }
@@ -96,58 +105,60 @@ caption-frame, .button {
 
 .zoomTarget[data-index="5"] {
     position:absolute;
-    top: 30%;
-    left: 0%;
-    width: 90%;
-    height: 70%;
+    top: 28%;
+    left: 25%;
+    width: 45%;
+    height: 45%
     /* border:1px solid lime; */
 }
 
 
 .overlay[data-index="5"] {
     position: absolute;
-    top: 80.5%;
-  	left: 12.5%;
-  	width: 5.5%;
-  	height: 4.2%;
+    top: 20.12%;
+  	left: 45.67%;
+  	width: 11.30%;
+  	height: 19.8%;
   	border: 2px solid maroon;
-  	border-radius: 50%;
+  	border-radius: 0%;
 }
 
 
 .zoomTarget[data-index="6"] {
     position:absolute;
-    top: 30%;
+    top: 33%;
     left: 0%;
-    width: 90%;
-    height: 70%;
+    width: 45%;
+    height: 45%
     /* border:1px solid black; */
 }
 
-/* this overlay contains an image */
+
 .overlay[data-index="6"] {
   position: absolute;
-    top: 0%;
-    left: 0%;
-    width: 100%;
-    height: 100%;
+    top: 56%;
+    left: 16.5%;
+    width: 4%;
+    height: 16%;
+    border: 2px solid maroon;
+  	border-radius: 50%;
 }
 
 .zoomTarget[data-index="7"] {
     position:absolute;
-    top: 30%;
-    left: 0%;
-    width: 90%;
+    top: 15%;
+    left: 15%;
+    width: 70%;
     height: 70%;
     /* border:1px solid white; */
 }
 
 .overlay[data-index="7"] {
     position: absolute;
-    top: 43%;
-  	left: 53%;
-  	width: 45%;
-  	height: 25%;
+    top: 22%;
+  	left: 66.5%;
+  	width: 6.5%;
+  	height: 55%;
     border-radius: 0%;
     border: 2px solid maroon;
 }
@@ -162,3 +173,11 @@ caption-frame, .button {
 /*  border:1px solid orange; */
 }
 
+.zoomTarget[data-index="9"] {
+    position:absolute;
+    top: 22%;
+    left: 10%;
+    width: 33%;
+    height: 33%;
+/*  border:1px solid orange; */
+}
