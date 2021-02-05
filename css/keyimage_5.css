@@ -26,13 +26,14 @@ caption-frame, .button {
 
 .zoomTarget[data-index="1"] {
     position:absolute;
-    top: 40%;
-    left: 33%;
-    width: 60%;
-    height: 30%
+    top: 28%;
+    left: 42%;
+    width: 42%;
+    height: 42%
 /* border:1px solid pink; */
 }
 
+/* 
 .overlay[data-index="1"] {
   position: absolute;
   top: 31.3%;
@@ -41,24 +42,24 @@ caption-frame, .button {
   height: 18.8%;
   border: 2px solid maroon;
 } 
+ */
   
 .zoomTarget[data-index="2"] {
     position:absolute;
     top: 28%;
-    left: 40%;
+    left: 42%;
     width: 42%;
     height: 42%
     /* border:5px solid red; */
 }
 
+/* this overlay contains an image */
 .overlay[data-index="2"] {
-  	position: absolute;
-    top: 39.8%;
-    left: 59.35%;
-    width: 1.85%;
-    height: 5.6%;
-    border: 2px solid maroon;
-  	border-radius: 0%;
+  position: absolute;
+    top: 0%;
+    left: 0%;
+    width: 100%;
+    height: 100%;
 }
     
     
@@ -71,6 +72,7 @@ caption-frame, .button {
     /* border:10px solid green; */
 }
 
+/* 
 .overlay[data-index="3"] {
     position: absolute;
     top: 38%;
@@ -80,18 +82,20 @@ caption-frame, .button {
     border: 2px solid maroon;
   	border-radius: 50%;
 }
+ */
 
 
 .zoomTarget[data-index="4"] {
     position:absolute;
-    top: 33%;
-    left: 25%;
-    width: 45%;
-    height: 45%
+    top: 44%;
+    left: 20%;
+    width: 35%;
+    height: 35%
     /* border:1px solid blue; */
 }
 
 
+/* 
 .overlay[data-index="4"] {
     position: absolute;
     top: 50%;
@@ -101,18 +105,20 @@ caption-frame, .button {
   	border: 2px solid maroon;
   	border-radius: 50%;
 }
+ */
 
 
 .zoomTarget[data-index="5"] {
     position:absolute;
-    top: 28%;
-    left: 25%;
-    width: 45%;
-    height: 45%
+    top: 23%;
+    left: 35%;
+    width: 35%;
+    height: 35%
     /* border:1px solid lime; */
 }
 
 
+/* 
 .overlay[data-index="5"] {
     position: absolute;
     top: 20.12%;
@@ -122,18 +128,20 @@ caption-frame, .button {
   	border: 2px solid maroon;
   	border-radius: 0%;
 }
+ */
 
 
 .zoomTarget[data-index="6"] {
     position:absolute;
-    top: 33%;
-    left: 0%;
-    width: 45%;
-    height: 45%
+    top: 50%;
+    left:5%;
+    width: 30%;
+    height: 30%
     /* border:1px solid black; */
 }
 
 
+/* 
 .overlay[data-index="6"] {
   position: absolute;
     top: 56%;
@@ -143,16 +151,18 @@ caption-frame, .button {
     border: 2px solid maroon;
   	border-radius: 50%;
 }
+ */
 
 .zoomTarget[data-index="7"] {
     position:absolute;
-    top: 15%;
-    left: 15%;
-    width: 70%;
-    height: 70%;
+    top: 28%;
+    left: 46%;
+    width: 45%;
+    height: 45%;
     /* border:1px solid white; */
 }
 
+/* 
 .overlay[data-index="7"] {
     position: absolute;
     top: 22%;
@@ -162,6 +172,7 @@ caption-frame, .button {
     border-radius: 0%;
     border: 2px solid maroon;
 }
+ */
 
 
 .zoomTarget[data-index="8"] {

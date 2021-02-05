@@ -15,7 +15,7 @@ var margin;
 var zoom;
 
 // set length of zoom animation with duration. Milliseconds. 
-var duration = 800;
+var duration = 1800;
 
 // Easing controls animation easing. Alternate values are "linear" "ease" "ease-in" "ease-out" "ease-in-out"
 var easing = "ease";
@@ -63,7 +63,7 @@ function display_overlay(i) {
 
   // fade in and fade out can be fine-tuned here-- you can change "fast" 
   // to a value in milliseconds to set a specific duration.
-  $(".overlay").fadeOut("fast");
+  $(".overlay").fadeOut("500");
   $(".overlay[data-index='" + i +"']").fadeIn();
 }
 

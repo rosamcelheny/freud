@@ -36,9 +36,9 @@ caption-frame, .button {
 .zoomTarget[data-index="2"] {
     position:absolute;
     top: 0%;
-    left: 5%;
-    width: 90%;
-    height: 70%
+    left: 20.2%;
+    width: 60%;
+    height: 50%
     /* border:5px solid red; */
 }
 
@@ -125,14 +125,15 @@ caption-frame, .button {
 
 .zoomTarget[data-index="6"] {
     position:absolute;
-    top: 0%;
-    left: 0%;
-    width: 70%;
-    height: 70%;
+    top: 10%;
+    left: 20%;
+    width: 40%;
+    height: 40%;
     /* border:1px solid black; */
 }
 
-/* this overlay contains an image */
+
+/* 
 .overlay[data-index="6"] {
   position: absolute;
     top: 0%;
@@ -140,13 +141,14 @@ caption-frame, .button {
     width: 100%;
     height: 100%;
 }
+ */
 
 .zoomTarget[data-index="7"] {
     position:absolute;
-    top: 5%;
-    left: 20%;
-    width: 50%;
-    height: 50%;
+    top: 10%;
+    left: 25%;
+    width: 40%;
+    height: 40%;
     /* border:1px solid white; */
 }
 

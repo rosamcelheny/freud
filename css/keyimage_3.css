@@ -12,7 +12,7 @@ caption-frame, .button {
 
 
 /*This file has the positions of the zoomTarget(s) for each image.*/
-/* Keyimage3 ver 20210124 */
+/* Keyimage3 ver 20210205 */
 .zoomTarget[data-index="1"] {
     position:absolute;
     top: 22%;
@@ -112,9 +112,9 @@ caption-frame, .button {
 .zoomTarget[data-index="6"] {
     position:absolute;
     top: 22%;
-    left: 16%;
-    width: 67%;
-    height: 67%;
+    left: 50%;
+    width: 33%;
+    height: 33%;
     /* border:1px solid black; */
 }
 
@@ -131,9 +131,9 @@ caption-frame, .button {
 .zoomTarget[data-index="7"] {
     position:absolute;
     top: 22%;
-    left: 16%;
-    width: 67%;
-    height: 67%;
+    left: 50%;
+    width: 33%;
+    height: 33%;
     /* border:1px solid white; */
 }
 
