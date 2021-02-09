@@ -71,8 +71,8 @@ div {
 /*style for link button*/
 #link, .button, .caption {
   color:black;
-  font-size:20px;
-  line-height:28px;
+  font-size:14px;
+  line-height:16px;
   font-family: Avenir, Arial, Helvetica, sans-serif;
 }
 
@@ -135,14 +135,19 @@ div {
   }
   .button {
     position: relative;
+    font-size:20px;
+    line-height:28px;
     width: 5em;
   }
   .caption-frame {
     margin: 0 1em 0 1em;
   }
+  
   .caption {
     font-size:20px;
+    line-height:28px;
   }
+  
   .zoomViewport {
     height: initial;
   }
